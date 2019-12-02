@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html>  
+    <head>
+        <title>Resume Application</title>
+    </head>
+    <body>
+        <h1>Welcome to Resume Application!</h1>
+        <h2>Choose your user type-</h2>
+        <button type="button"><a href="/applicant">Applicant</a></button>
+        <button type="button"><a href="/manager">Manager</a></button>
+        <button type="button"><a href="/signup">Register for Manager</a></button>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+
+    <div class="header">Welcome to Resume Application! Choose your user type-
+    </div>
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                </div>
+                <form action="/index_applicant" class="col-12" method="POST">
+                    <button class="btn-top"><i class="fas fa-sign-in-alt"></i>Applicant</button><br>
+                </form>
+                <form action="/index_login" class="col-12" method="POST">
+                    <button class="btn"><i class="fas fa-sign-in-alt"></i>Manager Login</button><br>
+                </form>
+                <form action="/index_register" class="col-12" method="POST">
+                    <button class="btn"><i class="fas fa-sign-in-alt"></i>Manager Register</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.8.1/ui-grid.min.js"></script>
+<script src="/js/controller.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</html>

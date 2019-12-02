@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(/img/background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.main-section{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+.modal-content{
+    background-color: white;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #848484;
+}
+.user-img{
+    margin-bottom: 35px;
+    top: 17px;
+}
+.user-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 2px #848484;
+    opacity: .75;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.form-group input{
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 54px;
+}
+.form-group::before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    left: 28px;
+    padding-top: 4px;
+    opacity: .8;
+}
+.form-group:last-of-type::before{
+    content: "\f023";
+}
+buttton{
+    width: 40%;
+    margin: 5px 0 25px;
+}
+.btn{
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: 19px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border-bottom: 4px solid #0074e4;
+    margin-bottom: 30px;
+}
+.btn:hover, .btn:focus{
+    background-color: #0074e4;
+    border-bottom: 4px solid #0074e4;
+}
+.svg-inline--fa{
+    font-size: 20px;
+    margin-right:7px;
+}
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    font-size: 25px;
+    text-align: center;
+}

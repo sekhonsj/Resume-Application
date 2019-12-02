@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body ng-controller="applicant">
+    <div class="header">Applicant Submission</div>
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <form class="col-12" ng-submit="submit1(user)" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First name" ng-model="user.fName">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last name" ng-model="user.lName">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" ng-model="user.email">
+                    </div>
+                    <div class="form-group">
+                        <select name="position" ng-model="user.position"
+                            ng-options=" position.available_positions for position in positions">
+                        </select>
+                    </div>
+                    <div class="form-group" action="/uploadfile" enctype="multipart/form-data" ng-model="user.resume">
+                        <input type="file" name="file">
+                    </div>
+                        <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.8.1/ui-grid.min.js"></script>
+<script src="/js/controller.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</html>
